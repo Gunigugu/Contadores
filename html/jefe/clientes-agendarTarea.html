@@ -7,7 +7,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Crear contador</title>
+  <title>Agendar tarea</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -227,14 +227,14 @@
                 </li>
               </ul>
             </li>
-            <li class="site-menu-item has-sub active open">
+            <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-users" aria-hidden="true"></i>
                 <span class="site-menu-title">Contadores</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
-                <li class="site-menu-item active">
+                <li class="site-menu-item">
                   <a class="animsition-link " href="contador-crear.html" data-slug="layout-menu-collapsed">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Crear contador</span>
@@ -248,20 +248,20 @@
                 </li>
               </ul>
             </li>
-            <li class="site-menu-item has-sub">
+            <li class="site-menu-item has-sub active open">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
                 <span class="site-menu-title">Clientes</span>
                 <span class="site-menu-arrow"></span>
               </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
+              <ul class="site-menu-sub ">
+                <li class="site-menu-item  ">
                   <a class="animsition-link" href="../../html/jefe/clientes-crear.html" data-slug="layout-menu-collapsed">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Crear clientes</span>
                   </a>
                 </li>
-                <li class="site-menu-item">
+                <li class="site-menu-item ">
                   <a class="animsition-link" href="../../html/jefe/clientes-ver.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Ver clientes</span>
@@ -285,7 +285,7 @@
                     <span class="site-menu-title">Cargar tareas realizadas</span>
                   </a>
                 </li>
-                <li class="site-menu-item">
+                <li class="site-menu-item active">
                   <a class="animsition-link" href="../../html/jefe/clientes-agendarTarea.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Agendar tarea</span>
@@ -329,11 +329,11 @@
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Crear contador</h1>
+      <h1 class="page-title">Agendar tarea</h1>
       <ol class="breadcrumb">
         <li><a href="../index.html">Inicio</a></li>
-        <li>Contadores</li>
-        <li class="active">Crear contador</li>
+        <li>Clientes</li>
+        <li class="active">Agendar tarea</li>
       </ol>
     </div>
 
@@ -347,63 +347,109 @@
               <div class="panel-body container-fluid">
                         <div class="row ">
                           <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">Nombre</h4>
-                            <input type="text" class="form-control" id="nombre">
+                            <h4 class="example-title">Empresa</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
                           </div>
                           <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">Apellido</h4>
-                            <input type="text" class="form-control" id="apellido">
+                            <h4 class="example-title">Contador</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
                           </div>
-                        </div> 
-                        <div class="row ">
+                        </div>
+                        <div class="row">
                           <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">Celular</h4>
-                            <input type="text" class="form-control" id="celular">
+                            <h4 class="example-title">Area</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
                           </div>
                           <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">Teléfono fijo</h4>
-                            <input type="text" class="form-control" id="telefono">
+                            <h4 class="example-title">Rubro</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
                           </div>
+
                         </div>
                         <div class="row ">
                           <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">E-mail</h4>
-                            <input type="text" class="form-control" id="e-mail">
+                            <h4 class="example-title">Vencidas</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
                           </div>
                           <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">CUIL/CUIT</h4>
-                            <input type="text" class="form-control" id="cuil">
+                            <h4 class="example-title">Periodo Fiscal</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
                           </div>
+                          
                         </div>
+                        
 
                           
 
                         <div class="row">
-                          <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">Usuario</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Opcion 1</option>
-                                    <option>Opcion 2</option>
-                                  </select>
-                                </div>
+                         <div class="col-sm-6 col-md-6 margin-top-30">
+                            <div class="checkbox-custom checkbox-inline checkbox-primary checkbox-lg pull-left">
+                              <input type="checkbox" id="inputCheckbox" name="remember">
+                              <label for="inputCheckbox">A vencer</label>
+                            </div>                      
                           </div>
-                         
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <div class="checkbox-custom checkbox-inline checkbox-primary checkbox-lg pull-left">
+                              <input type="checkbox" id="inputCheckbox" name="remember">
+                              <label for="inputCheckbox">Es periódica</label>
+                            </div>                      
+                          </div>              
                         </div> 
-                           <div class="row">
+                        <div class="row ">
                           <div class="col-sm-6 col-md-6 margin-top-30">
-                            <h4 class="example-title">Área</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Opcion 1</option>
-                                    <option>Opcion 2</option>
-                                  </select>
-                                </div>
+                          <h4 class="example-title">Fechas</h4>
+                            <div class="input-daterange" data-plugin="datepicker">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                      </span>
+                      <input type="text" class="form-control" name="start">
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon">hasta</span>
+                      <input type="text" class="form-control" name="end">
+                    </div>
+                  </div>
                           </div>
-                         
-                         </div> <!-- row-->
+                          
+                        </div>
+                            <!-- row-->
 
 
 
@@ -414,7 +460,7 @@
                             
                             <button type="button" class="btn btn btn-success">Crear</button>
                              <button type="button" class="btn btn-outline btn-default">Limpiar </button>
-                             <button type="button" onclick="location.href='contadores-ver.html';" class="btn btn-outline btn-warning">Ver contadores</button>
+                             <button type="button" onclick="location.href='clientes-ver.html';" class="btn btn-outline btn-warning">Ver clientes</button>
 
                            </div>
                          </div> <!-- row-->
@@ -423,6 +469,80 @@
 
 
             </div>
+            <div class="panel">
+         <div class="panel-body">
+
+
+          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Empresa</th>
+                <th>Contador</th>
+                <th>Tiempo</th>
+                <th>Fecha carga</th>
+                <th>Observaciones</th>
+                <th>Archivo</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="gradeA">
+                <td>12/12/2012</td>
+                <td>nombre</td>
+                <td>asd</td>
+                <td>10</td>
+                <td>10/10/2020</td>
+                <td>observación</td>
+                <td class="actions">
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="descargar"><i class="icon wb-download" aria-hidden="true"></i></a>
+                  
+                  
+                </td>
+
+                
+              </tr>
+              <tr class="gradeA">
+                <td>12/12/2012</td>
+                <td>nombre</td>
+                <td>asd</td>
+                <td>10</td>
+                <td>10/10/2020</td>
+                <td>observación</td>
+                <td class="actions">
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="descargar"><i class="icon wb-download" aria-hidden="true"></i></a>
+                  
+                  
+                </td>
+
+                
+              </tr>
+              <tr class="gradeA">
+                <td>12/12/2012</td>
+                <td>nombre</td>
+                <td>asd</td>
+                <td>10</td>
+                <td>10/10/2020</td>
+                <td>observación</td>
+                <td class="actions">
+                  <a href="#" class="btn btn-sm btn-icon btn-pure btn-default on-default edit-row" data-toggle="tooltip" data-original-title="descargar"><i class="icon wb-download" aria-hidden="true"></i></a>
+                  
+                  
+                </td>
+
+                
+              </tr>
+             
+            </tbody>
+          </table>
+
+
+          
+
+      
+
+    </div>
+  </div>
           </div>
 
 
