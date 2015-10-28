@@ -7,7 +7,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Ver detalles del vencimiento</title>
+  <title>Agendar tarea</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -138,177 +138,66 @@
       <!-- End Site Navbar Seach -->
     </div>
   </nav>
-  <div class="site-menubar">
+    <div class="site-menubar">
     <div class="site-menubar-body">
       <div>
         <div>
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
-            <li class="site-menu-item">
-              <a class="animsition-link" href="../../html/jefe/dashboard.html" data-slug="angular">
-                <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
-                <span class="site-menu-title">Dashboard</span>
+            
+
+
+            
+            <li class="site-menu-item ">
+              <a class="animsition-link" href="tareas-ver.html" data-slug="angular">
+                <i class="site-menu-icon wb-clipboard" aria-hidden="true"></i>
+                <span class="site-menu-title">Ver tareas</span>
                 <div class="site-menu-label">
                   
                 </div>
               </a>
             </li>
-             <li class="site-menu-item has-sub">
+
+            <li class="site-menu-item has-sub active open">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
                 <span class="site-menu-title">Clientes</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear clientes</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-ver.html" data-slug="layout-menu-expended">
+                
+                <li class="site-menu-item ">
+                  <a class="animsition-link" href="../../html/contador/clientes-ver.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Ver clientes</span>
                   </a>
                 </li>
-              <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-asignarPeriodica.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Asignar T. periodica</span>
-                  </a>
-                </li>
+              
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-asignarNoPeriodica.html" data-slug="layout-menu-expended">
+                  <a class="animsition-link" href="../../html/contador/clientes-asignarNoPeriodica.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Asignar T. no periodica</span>
                   </a>
                 </li>
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-cargarRealizadas.html" data-slug="layout-menu-expended">
+                  <a class="animsition-link" href="../../html/contador/clientes-cargarRealizadas.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Cargar tareas realizadas</span>
                   </a>
                 </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-agendarTarea.html" data-slug="layout-menu-expended">
+                <li class="site-menu-item active">
+                  <a class="animsition-link" href="../../html/contador/clientes-agendarTarea.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Agendar tarea</span>
                   </a>
                 </li>
               </ul>
             </li>
-
-
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-clipboard" aria-hidden="true"></i>
-                <span class="site-menu-title">Tareas</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item ">
-                  <a class="animsition-link" href="../../html/jefe/tarea-metadata-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear tareas</span>
-                  </a>
-                </li>
-                
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/tareas-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver Tareas</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-graph-up" aria-hidden="true"></i>
-                <span class="site-menu-title">Áreas</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/areas-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear área</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/areas-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver áreas</span>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
-                <span class="site-menu-title">Rubros</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub ">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/rubros-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear rubro</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/rubros-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver rubros</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub ">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
-                <span class="site-menu-title">Contadores</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/contador-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear contador</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/contadores-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver contadores</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
             
-            <li class="site-menu-item has-sub active open">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-calendar" aria-hidden="true"></i>
-                <span class="site-menu-title">Vencimientos</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/vencimientos-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear vencimiento</span>
-                  </a>
-                </li>
-                <li class="site-menu-item active">
-                  <a class="animsition-link" href="../../html/jefe/vencimientos-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver vencimientos</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+
+            
+            
+            
           </ul>
 
 
@@ -321,73 +210,127 @@
 
 
 
-
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Ver detalles del vencimiento</h1>
+      <h1 class="page-title">Agendar tarea</h1>
       <ol class="breadcrumb">
         <li><a href="../index.html">Inicio</a></li>
-        <li>Vencimientos</li>
-        <li><a href="vencimientos-ver.html">Ver vencimientos</li></a>
-        <li class="active">Ver detalles del vencimiento</li>
+        <li>Clientes</li>
+        <li class="active">Agendar tarea</li>
       </ol>
+    </div>
 
 
-      
+            <div class="page-content">
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">Complete todos los campos.</h4>
+              </div>
+
+              <div class="panel-body container-fluid">
+                        <div class="row ">
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Empresa</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Tarea</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+                        </div> 
+                        <div class="row ">
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                          <h4 class="example-title">Vencimiento interno</h4>
+                            <div class="input-group">
+                              <span class="input-group-addon">
+                                <i class="icon wb-calendar" aria-hidden="true"></i>
+                              </span>
+                              <input type="text" class="form-control" data-plugin="datepicker">
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Periodo Fiscal</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+                          
+                        </div>
+                        <div class="row ">
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Cargar Archivo</h4>
+                          <div class="input-group input-group-file">
+                    <input type="text" class="form-control" readonly="">
+                    <span class="input-group-btn">
+                      <span class="btn btn-outline btn-file">
+                        <i class="icon wb-upload" aria-hidden="true"></i>
+                        <input type="file" name="" multiple="">
+                      </span>
+                    </span>
+                  </div>
+                  </div>
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Tiempo real</h4>
+                            <input type="number" class="form-control" id="cuil">
+                          </div>
+                        </div>
+
+                          
+
+                        <div class="row">
+                          
+                  <div class="col-sm-6 col-md-6 margin-top-30 ">
+                            <h4 class="example-title">Observaciones</h4>
+                            <textarea class="form-control" id="textareaDefault" rows="3"></textarea>
+                          </div>
+                         
+                        </div> 
+                            <!-- row-->
 
 
 
 
-                
+
+                         <div class="row">
+                           <div class="col-sm-6 col-md-6 margin-top-20">
+                            
+                            <button type="button" class="btn btn btn-success">Crear</button>
+                             <button type="button" class="btn btn-outline btn-default">Limpiar </button>
+                             <button type="button" onclick="location.href='clientes-ver.html';" class="btn btn-outline btn-warning">Ver clientes</button>
+
+                           </div>
+                         </div> <!-- row-->
+                        </div>
+
+
+
+            </div>
+          </div>
+
 
 
 
 
 
     </div>
-    <div class="page-content">
-
-      <!-- Panel Table Add Row -->
-      <div class="panel">
-        <div class="panel-body">
-
-          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
-            
-            <tbody>
-              <tr class="gradeA">
-                <td><b>Tarea</b></td>
-                <td>NombreTarea</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Período fiscal</b></td>
-                <td>2013-2</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Código verificador</b></td>
-                <td>v3r1fico</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Fecha de vencimiento</b></td>
-                <td>2015-09-01</td>                
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="dt-panelfooter clearfix">
-          <button type="button" onclick="location.href='vencimientos-ver.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
-          <a href="cursos-precargados.html" data-slug="dashboard">
-
-          </a></div><a href="cursos-precargados.html" data-slug="dashboard">
-          <!-- -->        
-
-      
-
-         
-          <!-- -->
-        </div>
-      </div>
-      <!-- End Panel Table Add Row -->
+    
 
       
 

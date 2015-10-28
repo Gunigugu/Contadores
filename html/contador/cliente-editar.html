@@ -7,7 +7,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Mis tareas pendientes</title>
+  <title>Editar cliente</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -104,7 +104,7 @@
             <a class="navbar-avatar dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false"
             data-animation="scale-up" role="button">
               <i class="icon wb-chevron-down-mini" ></i>
-              <span class="avatar avatar-online">usuario@usuario.com</span>
+              <span class="avatar avatar-online">jefe@jefe.com</span>
             </a>
             <ul class="dropdown-menu" role="menu">
               <li role="presentation">
@@ -138,31 +138,63 @@
       <!-- End Site Navbar Seach -->
     </div>
   </nav>
-    <div class="site-menubar">
+  <div class="site-menubar">
     <div class="site-menubar-body">
       <div>
         <div>
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
+            
 
-            <li class="site-menu-item active">
-              <a class="animsition-link" href="misTareasPendientes.html" data-slug="angular">
-                <i class="site-menu-icon wb-clipboard" aria-hidden="true"></i>
-                <span class="site-menu-title">Tareas pendientes</span>
-                <div class="site-menu-label">
-                  
-                </div>
-              </a>
-            </li>
+
+            
             <li class="site-menu-item ">
-              <a class="animsition-link" href="misTareas.html" data-slug="angular">
+              <a class="animsition-link" href="tareas-ver.html" data-slug="angular">
                 <i class="site-menu-icon wb-clipboard" aria-hidden="true"></i>
-                <span class="site-menu-title">Todas mis tareas</span>
+                <span class="site-menu-title">Ver tareas</span>
                 <div class="site-menu-label">
                   
                 </div>
               </a>
             </li>
+
+            <li class="site-menu-item has-sub active open">
+              <a href="javascript:void(0)" data-slug="layout">
+                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
+                <span class="site-menu-title">Clientes</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                
+                <li class="site-menu-item active">
+                  <a class="animsition-link" href="../../html/contador/clientes-ver.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Ver clientes</span>
+                  </a>
+                </li>
+              
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/contador/clientes-asignarNoPeriodica.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Asignar T. no periodica</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/contador/clientes-cargarRealizadas.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Cargar tareas realizadas</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/contador/clientes-agendarTarea.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Agendar tarea</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            
+
             
             
             
@@ -178,73 +210,17 @@
 
 
 
+
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Mis tareas pendientes</h1>
+      <h1 class="page-title">Editar cliente</h1>
       <ol class="breadcrumb">
         <li><a href="../index.html">Inicio</a></li>
-        
-        <li class="active">Mis tareas pendientes</li>
+        <li>Contadores</li>
+        <li><a href="cliente-ver.html">Ver cliente</a></li>
+        <li class="active">Editar cliente</li>
       </ol>
-
-
-      <div class="page-header-actions">
-        <a class="btn btn-sm btn-default btn-outline btn-round" data-toggle="collapse" href="#exampleCollapseExample" aria-expanded="false" aria-controls="exampleCollapseExample">
-          <i class="icon wb-chevron-down" aria-hidden="true"></i>
-          <span class="hidden-xs">Filtrar</span>
-        </a>
-      </div>
-
-
-
-
-                <div class="collapse" id="exampleCollapseExample" aria-expanded="false" style="height: 0px;">
-                    <div class="well">
-                       <div class="row">
-                      <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Fecha inicio</h4>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="icon wb-calendar" aria-hidden="true"></i>
-                          </span>
-                          <input type="text" class="form-control" data-plugin="datepicker">
-                        </div>
-                      </div>
-                      <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Vencimiento fiscal</h4>
-                        <div class="input-group">
-                          <span class="input-group-addon">
-                            <i class="icon wb-calendar" aria-hidden="true"></i>
-                          </span>
-                          <input type="text" class="form-control" data-plugin="datepicker">
-                        </div>
-                      </div>
-                      
-
-                      
-                     </div> <!-- row-->
-                     <div class="row">
-                      <div class="col-sm-6 col-md-4">
-                      <h4 class="example-title">Nombre</h4>
-                        <input type="text" class="form-control" id="inputHelpText">
-                      </div>
-
-                    
-                      
-                      
-                     </div> <!-- row-->
-
-
-
-
-
-                    </div>
-                  </div>
-
-
-
-
 
     </div>
     <div class="page-content">
@@ -254,82 +230,69 @@
         <div class="panel-body">
 
           <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
-            <thead>
-              <tr>
-                <th>Fecha inicio</th>
-                <th>Vencimeinto fiscal</th>
-                <th>Nombre</th>
-                <th>Acciones</th>
-              </tr>
-            </thead>
+            
             <tbody>
               <tr class="gradeA">
-                <td>12/12/1991</td>
-                <td>1/1/1992</td>
-                <td>tarea1</td>
-
+                <td><b>Nombre</b></td>
                 <td class="actions">
-                  
-                </td>
+                  <input type="text" class="form-control" name="campo">         
+                </td>                
               </tr>
               <tr class="gradeA">
-                <td>12/12/1991</td>
-                <td>1/1/1992</td>
-                <td>tarea1</td>
-
+                <td><b>Apellido</b></td>
                 <td class="actions">
-                  
-                </td>
+                  <input type="text" class="form-control" name="campo">         
+                </td>                
               </tr>
               <tr class="gradeA">
-                <td>12/12/1991</td>
-                <td>1/1/1992</td>
-                <td>tarea1</td>
-
+                <td><b>Celular</b></td>
                 <td class="actions">
-                  
-                </td>
+                  <input type="text" class="form-control" name="campo">         
+                </td>               
               </tr>
               <tr class="gradeA">
-                <td>12/12/1991</td>
-                <td>1/1/1992</td>
-                <td>tarea1</td>
-
+                <td><b>Teléfono fijo</b></td>
                 <td class="actions">
-                  
-                </td>
+                  <input type="text" class="form-control" name="campo">         
+                </td>                 
               </tr>
               <tr class="gradeA">
-                <td>12/12/1991</td>
-                <td>1/1/1992</td>
-                <td>tarea1</td>
-
+                <td><b>E-mail</b></td>
                 <td class="actions">
-                  
-                </td>
+                  <input type="text" class="form-control" name="campo">         
+                </td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>CUIL/CUIT</b></td>
+                <td class="actions">
+                  <input type="text" class="form-control" name="campo">         
+                </td>                 
+              </tr>
+              <tr class="gradeA">
+                <td><b>Usuario</b></td>
+                <td class="actions">
+                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>         
+                </td>                 
               </tr>
               
             </tbody>
           </table>
 
           <div class="dt-panelfooter clearfix">
-          
-          <div class="dataTables_paginate paging_simple_numbers" id="exampleTableTools_paginate">
-          <ul class="pagination">
-          <li class="paginate_button previous disabled" id="exampleTableTools_previous">
-          <a href="#" aria-controls="exampleTableTools" data-dt-idx="0" tabindex="0">
-          <i class="icon wb-chevron-left-mini"></i></a></li>
-          <li class="paginate_button active"><a href="#" aria-controls="exampleTableTools" data-dt-idx="1" tabindex="0">1</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="2" tabindex="0">2</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="3" tabindex="0">3</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="4" tabindex="0">4</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="5" tabindex="0">5</a></li>
-          <li class="paginate_button disabled" id="exampleTableTools_ellipsis"><a href="#" aria-controls="exampleTableTools" data-dt-idx="6" tabindex="0">…</a></li>
-          <li class="paginate_button "><a href="#" aria-controls="exampleTableTools" data-dt-idx="7" tabindex="0">9</a></li>
-          <li class="paginate_button next" id="exampleTableTools_next"><a href="#" aria-controls="exampleTableTools" data-dt-idx="8" tabindex="0"><i class="icon wb-chevron-right-mini"></i></a></li>
-          </ul>
-          </div>
-          </div>
+            <button type="button" class="btn btn btn-success margin-top-10">Guardar</button>
+          <button type="button" onclick="location.href='clientes-ver.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
+          <a href="cursos-precargados.html" data-slug="dashboard">
+
+          </a></div><a href="cursos-precargados.html" data-slug="dashboard">
+          <!-- -->        
+
+      
+
+         
           <!-- -->
         </div>
       </div>
@@ -339,9 +302,9 @@
 
     </div>
   </div>
+  <!-- End Page -->
 
 
-      
   <!-- Footer -->
   <footer class="site-footer">
     <span class="site-footer-legal">© 2015 Estudio Contable Jorge W. Sauan Asoc. - Contadores públicos</span>

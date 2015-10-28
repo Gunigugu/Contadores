@@ -7,7 +7,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Ver detalles del vencimiento</title>
+  <title>Generar reportes</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -138,12 +138,13 @@
       <!-- End Site Navbar Seach -->
     </div>
   </nav>
-  <div class="site-menubar">
+    <div class="site-menubar">
     <div class="site-menubar-body">
       <div>
         <div>
           <ul class="site-menu">
             <li class="site-menu-category">Menu</li>
+
             <li class="site-menu-item">
               <a class="animsition-link" href="../../html/jefe/dashboard.html" data-slug="angular">
                 <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
@@ -159,14 +160,14 @@
                 <span class="site-menu-title">Clientes</span>
                 <span class="site-menu-arrow"></span>
               </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
+              <ul class="site-menu-sub ">
+                <li class="site-menu-item  ">
                   <a class="animsition-link" href="../../html/jefe/clientes-crear.html" data-slug="layout-menu-collapsed">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Crear clientes</span>
                   </a>
                 </li>
-                <li class="site-menu-item">
+                <li class="site-menu-item ">
                   <a class="animsition-link" href="../../html/jefe/clientes-ver.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Ver clientes</span>
@@ -200,14 +201,15 @@
             </li>
 
 
-            <li class="site-menu-item has-sub">
+
+            <li class="site-menu-item has-sub ">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-clipboard" aria-hidden="true"></i>
                 <span class="site-menu-title">Tareas</span>
                 <span class="site-menu-arrow"></span>
               </a>
               <ul class="site-menu-sub">
-                <li class="site-menu-item ">
+                <li class="site-menu-item is-shown">
                   <a class="animsition-link" href="../../html/jefe/tarea-metadata-crear.html" data-slug="layout-menu-collapsed">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Crear tareas</span>
@@ -223,7 +225,7 @@
               </ul>
             </li>
 
-            <li class="site-menu-item has-sub">
+            <li class="site-menu-item has-sub ">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-graph-up" aria-hidden="true"></i>
                 <span class="site-menu-title">Áreas</span>
@@ -245,14 +247,14 @@
 
               </ul>
             </li>
-            <li class="site-menu-item has-sub">
+            <li class="site-menu-item has-sub ">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
                 <span class="site-menu-title">Rubros</span>
                 <span class="site-menu-arrow"></span>
               </a>
-              <ul class="site-menu-sub ">
-                <li class="site-menu-item">
+              <ul class="site-menu-sub">
+                <li class="site-menu-item ">
                   <a class="animsition-link" href="../../html/jefe/rubros-crear.html" data-slug="layout-menu-collapsed">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Crear rubro</span>
@@ -266,7 +268,7 @@
                 </li>
               </ul>
             </li>
-            <li class="site-menu-item has-sub ">
+            <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-users" aria-hidden="true"></i>
                 <span class="site-menu-title">Contadores</span>
@@ -274,7 +276,7 @@
               </a>
               <ul class="site-menu-sub">
                 <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/contador-crear.html" data-slug="layout-menu-collapsed">
+                  <a class="animsition-link " href="contador-crear.html" data-slug="layout-menu-collapsed">
                     <i class="site-menu-icon " aria-hidden="true"></i>
                     <span class="site-menu-title">Crear contador</span>
                   </a>
@@ -288,7 +290,7 @@
               </ul>
             </li>
             
-            <li class="site-menu-item has-sub active open">
+            <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-calendar" aria-hidden="true"></i>
                 <span class="site-menu-title">Vencimientos</span>
@@ -301,14 +303,31 @@
                     <span class="site-menu-title">Crear vencimiento</span>
                   </a>
                 </li>
-                <li class="site-menu-item active">
+                <li class="site-menu-item">
                   <a class="animsition-link" href="../../html/jefe/vencimientos-ver.html" data-slug="layout-menu-expended">
                     <i class="site-menu-icon " aria-hidden="true"></i> 
                     <span class="site-menu-title">Ver vencimientos</span>
                   </a>
                 </li>
               </ul>
+            </li><li class="site-menu-item has-sub open active">
+              <a href="javascript:void(0)" data-slug="layout">
+                <i class="site-menu-icon wb-pie-chart" aria-hidden="true"></i>
+                <span class="site-menu-title">Reportes</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub active">
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/jefe/reportes-generar.html" data-slug="layout-menu-collapsed">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Generar Reportes</span>
+                  </a>
+                </li>
+                
+              </ul>
             </li>
+
+            
           </ul>
 
 
@@ -321,73 +340,233 @@
 
 
 
-
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Ver detalles del vencimiento</h1>
+      <h1 class="page-title">Generar reportes</h1>
       <ol class="breadcrumb">
         <li><a href="../index.html">Inicio</a></li>
-        <li>Vencimientos</li>
-        <li><a href="vencimientos-ver.html">Ver vencimientos</li></a>
-        <li class="active">Ver detalles del vencimiento</li>
+        <li>Reportes</li>
+        <li class="active">Generar reportes</li>
       </ol>
+    </div>
 
+
+          <div class="page-content">
+            <div class="panel">
+              <div class="panel-heading">
+                <h4 class="panel-title">Complete todos los campos.</h4>
+              </div>
+
+              <div class="panel-body container-fluid">
+                        <div class="row ">
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Empresa</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Contador</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Area</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Rubro</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+
+                        </div>
+                        <div class="row ">
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Vencidas</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <h4 class="example-title">Periodo Fiscal</h4>
+                                <div class="form-group">
+                                  <select class="form-control">
+                                    <option></option>
+                                    <option>Opcion 1</option>
+                                    <option>Opcion 2</option>
+                                  </select>
+                                </div>
+                          </div>
+                          
+                        </div>
+                        
+
+                          
+
+                        <div class="row">
+                         <div class="col-sm-6 col-md-6 margin-top-30">
+                            <div class="checkbox-custom checkbox-inline checkbox-primary checkbox-lg pull-left">
+                              <input type="checkbox" id="inputCheckbox" name="remember">
+                              <label for="inputCheckbox">A vencer</label>
+                            </div>                      
+                          </div>
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                            <div class="checkbox-custom checkbox-inline checkbox-primary checkbox-lg pull-left">
+                              <input type="checkbox" id="inputCheckbox" name="remember">
+                              <label for="inputCheckbox">Es periódica</label>
+                            </div>                      
+                          </div>              
+                        </div> 
+                        <div class="row ">
+                          <div class="col-sm-6 col-md-6 margin-top-30">
+                          <h4 class="example-title">Fechas</h4>
+                            <div class="input-daterange" data-plugin="datepicker">
+                    <div class="input-group">
+                      <span class="input-group-addon">
+                        <i class="icon wb-calendar" aria-hidden="true"></i>
+                      </span>
+                      <input type="text" class="form-control" name="start">
+                    </div>
+                    <div class="input-group">
+                      <span class="input-group-addon">hasta</span>
+                      <input type="text" class="form-control" name="end">
+                    </div>
+                  </div>
+                          </div>
+                          
+                        </div>
+                            <!-- row-->
+
+
+
+
+
+                         <div class="row">
+                           <div class="col-sm-6 col-md-6 margin-top-20">
+                            
+                            <button type="button" class="btn btn btn-success">Crear</button>
+                             <button type="button" class="btn btn-outline btn-default">Limpiar </button>
+                             <button type="button" onclick="location.href='clientes-ver.html';" class="btn btn-outline btn-warning">Ver clientes</button>
+
+                           </div>
+                         </div> <!-- row-->
+                        </div>
+
+
+
+            </div>
+            <div class="panel">
+         <div class="panel-body">
+
+
+          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
+            <thead>
+              <tr>
+                <th>Fecha</th>
+                <th>Empresa</th>
+                <th>Contador</th>
+                <th>Tiempo</th>
+                <th>Fecha carga</th>
+                <th>Observaciones</th>
+                
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="gradeA">
+                <td>12/12/2012</td>
+                <td>nombre</td>
+                <td>asd</td>
+                <td>10</td>
+                <td>10/10/2020</td>
+                <td>observación</td>
+                
+                  
+                  
+                </td>
+
+                
+              </tr>
+              <tr class="gradeA">
+                <td>12/12/2012</td>
+                <td>nombre</td>
+                <td>asd</td>
+                <td>10</td>
+                <td>10/10/2020</td>
+                <td>observación</td>
+                
+                  
+                  
+                </td>
+
+                
+              </tr>
+              <tr class="gradeA">
+                <td>12/12/2012</td>
+                <td>nombre</td>
+                <td>asd</td>
+                <td>10</td>
+                <td>10/10/2020</td>
+                <td>observación</td>
+                
+                  
+                  
+                </td>
+
+                
+              </tr>
+             
+            </tbody>
+          </table>
+
+          <button type="button" class="btn btn-outline btn-warning ladda-button margin-top-20" data-style="slide-left" data-plugin="ladda">
+                      <span class="ladda-label"><i class="icon wb-download margin-right-10" aria-hidden="true"></i>Descargar en excel</span>
+                    <span class="ladda-spinner"></span></button>
+
+
+          
 
       
 
+    </div>
+  </div>
+          </div>
 
-
-
-                
 
 
 
 
 
     </div>
-    <div class="page-content">
-
-      <!-- Panel Table Add Row -->
-      <div class="panel">
-        <div class="panel-body">
-
-          <table class="table table-bordered table-hover table-striped" id="exampleAddRow">
-            
-            <tbody>
-              <tr class="gradeA">
-                <td><b>Tarea</b></td>
-                <td>NombreTarea</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Período fiscal</b></td>
-                <td>2013-2</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Código verificador</b></td>
-                <td>v3r1fico</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Fecha de vencimiento</b></td>
-                <td>2015-09-01</td>                
-              </tr>
-            </tbody>
-          </table>
-
-          <div class="dt-panelfooter clearfix">
-          <button type="button" onclick="location.href='vencimientos-ver.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
-          <a href="cursos-precargados.html" data-slug="dashboard">
-
-          </a></div><a href="cursos-precargados.html" data-slug="dashboard">
-          <!-- -->        
-
-      
-
-         
-          <!-- -->
-        </div>
-      </div>
-      <!-- End Panel Table Add Row -->
+    
 
       
 

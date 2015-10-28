@@ -30,8 +30,6 @@
   <link rel="stylesheet" href="../../assets/vendor/datatables-fixedheader/dataTables.fixedHeader.css">
   <link rel="stylesheet" href="../../assets/vendor/datatables-responsive/dataTables.responsive.css">
   <link rel="stylesheet" href="../../assets/vendor/bootstrap-datepicker/bootstrap-datepicker.css">
-   <link rel="stylesheet" href="../../assets/vendor/jquery-wizard/jquery-wizard.css">
-  <link rel="stylesheet" href="../../assets/vendor/formvalidation/formValidation.css">
 
   <!-- Page -->
   <link rel="stylesheet" href="../../assets/css/../fonts/font-awesome/font-awesome.css">
@@ -155,6 +153,52 @@
                 </div>
               </a>
             </li>
+             <li class="site-menu-item has-sub">
+              <a href="javascript:void(0)" data-slug="layout">
+                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
+                <span class="site-menu-title">Clientes</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/jefe/clientes-crear.html" data-slug="layout-menu-collapsed">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Crear clientes</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/jefe/clientes-ver.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Ver clientes</span>
+                  </a>
+                </li>
+              <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/jefe/clientes-asignarPeriodica.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Asignar T. periodica</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/jefe/clientes-asignarNoPeriodica.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Asignar T. no periodica</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/jefe/clientes-cargarRealizadas.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Cargar tareas realizadas</span>
+                  </a>
+                </li>
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/jefe/clientes-agendarTarea.html" data-slug="layout-menu-expended">
+                    <i class="site-menu-icon " aria-hidden="true"></i> 
+                    <span class="site-menu-title">Agendar tarea</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
 
             <li class="site-menu-item has-sub active open">
               <a href="javascript:void(0)" data-slug="layout">
@@ -166,7 +210,7 @@
                 <li class="site-menu-item ">
                   <a class="animsition-link" href="../../html/jefe/tarea-metadata-crear.html" data-slug="layout-menu-collapsed">
                     <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear tarea Metadata</span>
+                    <span class="site-menu-title">Crear tareas</span>
                   </a>
                 </li>
                 <li class="site-menu-item active is-shown">
@@ -248,51 +292,7 @@
                 </li>
               </ul>
             </li>
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
-                <span class="site-menu-title">Clientes</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear clientes</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver clientes</span>
-                  </a>
-                </li>
-              <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-asignarPeriodica.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Asignar T. periodica</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-asignarNoPeriodica.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Asignar T. no periodica</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-cargarRealizadas.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Cargar tareas realizadas</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-agendarTarea.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Agendar tarea</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+            
             <li class="site-menu-item has-sub">
               <a href="javascript:void(0)" data-slug="layout">
                 <i class="site-menu-icon wb-calendar" aria-hidden="true"></i>
@@ -312,6 +312,21 @@
                     <span class="site-menu-title">Ver vencimientos</span>
                   </a>
                 </li>
+              </ul>
+            </li><li class="site-menu-item has-sub">
+              <a href="javascript:void(0)" data-slug="layout">
+                <i class="site-menu-icon wb-pie-chart" aria-hidden="true"></i>
+                <span class="site-menu-title">Reportes</span>
+                <span class="site-menu-arrow"></span>
+              </a>
+              <ul class="site-menu-sub">
+                <li class="site-menu-item">
+                  <a class="animsition-link" href="../../html/jefe/reportes-generar.html" data-slug="layout-menu-collapsed">
+                    <i class="site-menu-icon " aria-hidden="true"></i>
+                    <span class="site-menu-title">Generar Reportes</span>
+                  </a>
+                </li>
+                
               </ul>
             </li>
           </ul>
@@ -333,7 +348,7 @@
       <ol class="breadcrumb">
         <li><a href="../index.html">Inicio</a></li>
         <li>Tareas</li>
-        <li class="active">Crear tarea</li>
+        <li class="active">Crear tarea (primer paso)</li>
       </ol>
     </div>
 
@@ -343,71 +358,6 @@
               <div class="panel-heading">
                 <h4 class="panel-title">Complete todos los campos.</h4>
               </div>
-              <div class="panel-body">
-              <!-- Steps -->
-              <div class="steps steps-sm row" data-plugin="matchHeight" data-by-row="true" role="tablist">
-                <div class="step col-md-4 done" data-target="#exampleAccount" role="tab" aria-expanded="false" style="height: 70px;">
-                  <span class="step-number">1</span>
-                  <div class="step-desc">
-                    <span class="step-title">Account</span>
-                    <p>Login for identification</p>
-                  </div>
-                </div>
-
-                <div class="step col-md-4 done" data-target="#exampleBilling" role="tab" aria-expanded="false" style="height: 70px;">
-                  <span class="step-number">2</span>
-                  <div class="step-desc">
-                    <span class="step-title">Billing</span>
-                    <p>Pay for the bill</p>
-                  </div>
-                </div>
-
-                <div class="step col-md-4 current" data-target="#exampleGetting" role="tab" aria-expanded="true" style="height: 70px;">
-                  <span class="step-number">3</span>
-                  <div class="step-desc">
-                    <span class="step-title">Getting</span>
-                    <p>Waiting for the goods</p>
-                  </div>
-                </div>
-              </div>
-              <!-- End Steps -->
-
-              <!-- Wizard Content -->
-              <div class="wizard-content">
-                <div class="wizard-pane" id="exampleAccount" role="tabpanel" aria-expanded="false">
-                  <form id="exampleAccountForm" novalidate="novalidate" class="fv-form fv-form-bootstrap"><button type="submit" class="fv-hidden-submit disabled" style="display: none; width: 0px; height: 0px;" disabled="disabled"></button>
-                    <div class="form-group has-success">
-                      <label class="control-label" for="inputUserName">Username</label>
-                      <input type="text" class="form-control" id="inputUserName" name="username" required="required" data-fv-field="username">
-                    <small class="help-block" data-fv-validator="notEmpty" data-fv-for="username" data-fv-result="VALID" style="display: none;">The username is required</small><small class="help-block" data-fv-validator="stringLength" data-fv-for="username" data-fv-result="VALID" style="display: none;">The username must be more than 6 and less than 30 characters long</small><small class="help-block" data-fv-validator="regexp" data-fv-for="username" data-fv-result="VALID" style="display: none;">The username can only consist of alphabetical, number, dot and underscore</small></div>
-                    <div class="form-group has-success">
-                      <label class="control-label" for="inputPassword">Password</label>
-                      <input type="password" class="form-control" id="inputPassword" name="password" required="required" data-fv-field="password">
-                    <small class="help-block" data-fv-validator="notEmpty" data-fv-for="password" data-fv-result="VALID" style="display: none;">The password is required</small><small class="help-block" data-fv-validator="different" data-fv-for="password" data-fv-result="VALID" style="display: none;">The password cannot be the same as username</small></div>
-                  </form>
-                </div>
-                <div class="wizard-pane" id="exampleBilling" role="tabpanel" aria-expanded="false">
-                  <form id="exampleBillingForm" novalidate="novalidate" class="fv-form fv-form-bootstrap"><button type="submit" class="fv-hidden-submit disabled" style="display: none; width: 0px; height: 0px;" disabled="disabled"></button>
-                    <div class="form-group has-success">
-                      <label class="control-label" for="inputCardNumber">Card Number</label>
-                      <input type="text" class="form-control" id="inputCardNumber" name="number" placeholder="Card number" data-fv-field="number">
-                    <small class="help-block" data-fv-validator="notEmpty" data-fv-for="number" data-fv-result="VALID" style="display: none;">The credit card number is required</small></div>
-                    <div class="form-group has-success">
-                      <label class="control-label" for="inputCVV">CVV</label>
-                      <input type="text" class="form-control" id="inputCVV" name="cvv" placeholder="CVV" data-fv-field="cvv">
-                    <small class="help-block" data-fv-validator="notEmpty" data-fv-for="cvv" data-fv-result="VALID" style="display: none;">The CVV number is required</small></div>
-                  </form>
-                </div>
-                <div class="wizard-pane active" id="exampleGetting" role="tabpanel" aria-expanded="true">
-                  <div class="text-center margin-vertical-20">
-                    <i class="icon wb-check font-size-40" aria-hidden="true"></i>
-                    <h4>We got your order. Your product will be shipping soon.</h4>
-                  </div>
-                </div>
-              </div>
-              <!-- End Wizard Content -->
-
-            <div class="wizard-buttons"><a class="btn btn-default btn-outline" href="#exampleWizardForm" data-wizard="back" role="button">Back</a><a class="btn btn-primary btn-outline pull-right hide" href="#exampleWizardForm" data-wizard="next" role="button">Next</a><a class="btn btn-success btn-outline pull-right" href="#exampleWizardForm" data-wizard="finish" role="button">Finish</a></div></div>
 
               <div class="panel-body container-fluid">
                            <div class="row ">
@@ -454,71 +404,14 @@
                             </div>
                           </div>
                         </div> <!-- row-->
-                         <div class="row">
-                          <div class="col-sm-6 col-md-6 ">
-                          <h4 class="example-title">Vencimiento interno</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Opcion 1</option>
-                                    <option>Opcion 2</option>
-                                  </select>
-                                </div>
-                          </div>
-                          <div class="col-sm-6 col-md-6">
-                            <h4 class="example-title">Contador</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Ana María Da Col</option>
-                                    <option>otro</option>
-                                  </select>
-                                </div>
-                          </div>
-                        </div> <!-- row-->
-                         <div class="row">
-                          <div class="col-sm-6 col-md-6 ">
-                            <h4 class="example-title">Cliente</h4>
-                                <div class="form-group">
-                                  <select class="form-control">
-                                    <option></option>
-                                    <option>Cliente 1</option>
-                                    <option>Cliente 2</option>
-                                  </select>
-                                </div>
-                          </div>
-                          
                          
-                          <div class="col-sm-6 col-md-6 ">
-                            <h4 class="example-title">Observaciones</h4>
-                            <textarea class="form-control" id="textareaDefault" rows="3"></textarea>
-                          </div>
-
-                         </div> <!-- row-->
-                         <div class="row">
-
-                          <div class="col-sm-6 col-md-4 margin-top-10">
-                            <h4 class="example-title">Cargar Archivo</h4>
-
-                          <div class="input-group input-group-file">
-                    <input type="text" class="form-control" readonly="">
-                    <span class="input-group-btn">
-                      <span class="btn btn-outline btn-file">
-                        <i class="icon wb-upload" aria-hidden="true"></i>
-                        <input type="file" name="" multiple="">
-                      </span>
-                    </span>
-                  </div>
-                        </div>
-
-
-            </div>
+                         
 
 
                          <div class="row">
                            <div class="col-sm-6 col-md-4 margin-top-20">
                              <button type="button" class="btn btn-outline btn-default">Limpiar </button>
-                             <button type="button" class="btn btn btn-success">Crear</button>
+                             <button type="button" onclick="location.href='tareas-crear2.html';" class="btn btn btn-success">Siguiente</button>
                            </div>
                          </div> <!-- row-->
                         </div>
@@ -588,13 +481,6 @@
   <script src="../../assets/examples/js/uikit/icon.js"></script>
  <script src="../../assets/js/components/bootstrap-datepicker.js"></script>
 
- <!-- para el wizard -->
-   <script src="../../assets/vendor/formvalidation/formValidation.js"></script>
-  <script src="../../assets/vendor/formvalidation/framework/bootstrap.js"></script>
-  <script src="../../assets/vendor/matchheight/jquery.matchHeight-min.js"></script>
-  <script src="../../assets/vendor/jquery-wizard/jquery-wizard.js"></script>
-
- 
 
 </body>
 

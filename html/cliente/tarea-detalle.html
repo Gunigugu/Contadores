@@ -7,7 +7,7 @@
   <meta name="description" content="bootstrap admin template">
   <meta name="author" content="">
 
-  <title>Ver detalles del vencimiento</title>
+  <title>Ver detalles de la tarea</title>
 
   <link rel="apple-touch-icon" href="../../assets/images/apple-touch-icon.png">
   <link rel="shortcut icon" href="../../assets/images/favicon.ico">
@@ -143,9 +143,10 @@
       <div>
         <div>
           <ul class="site-menu">
-            <li class="site-menu-category">Menu</li>
-            <li class="site-menu-item">
-              <a class="animsition-link" href="../../html/jefe/dashboard.html" data-slug="angular">
+            <li class="site-menu-category ">Menu</li>
+
+            <li class="site-menu-item active">
+              <a class="animsition-link" href="../../html/cliente/dashboard.html" data-slug="angular">
                 <i class="site-menu-icon wb-dashboard" aria-hidden="true"></i>
                 <span class="site-menu-title">Dashboard</span>
                 <div class="site-menu-label">
@@ -153,162 +154,18 @@
                 </div>
               </a>
             </li>
-             <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-user-circle" aria-hidden="true"></i>
-                <span class="site-menu-title">Clientes</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear clientes</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver clientes</span>
-                  </a>
-                </li>
-              <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-asignarPeriodica.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Asignar T. periodica</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-asignarNoPeriodica.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Asignar T. no periodica</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-cargarRealizadas.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Cargar tareas realizadas</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/clientes-agendarTarea.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Agendar tarea</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
+            <li class="site-menu-item">
+              <a class="animsition-link" href="misTareas.html" data-slug="angular">
                 <i class="site-menu-icon wb-clipboard" aria-hidden="true"></i>
-                <span class="site-menu-title">Tareas</span>
-                <span class="site-menu-arrow"></span>
+                <span class="site-menu-title">Todas mis tareas</span>
+                <div class="site-menu-label">
+                  
+                </div>
               </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item ">
-                  <a class="animsition-link" href="../../html/jefe/tarea-metadata-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear tareas</span>
-                  </a>
-                </li>
-                
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/tareas-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver Tareas</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-graph-up" aria-hidden="true"></i>
-                <span class="site-menu-title">Áreas</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/areas-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear área</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/areas-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver áreas</span>
-                  </a>
-                </li>
-
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-bookmark" aria-hidden="true"></i>
-                <span class="site-menu-title">Rubros</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub ">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/rubros-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear rubro</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/rubros-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver rubros</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li class="site-menu-item has-sub ">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-users" aria-hidden="true"></i>
-                <span class="site-menu-title">Contadores</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/contador-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear contador</span>
-                  </a>
-                </li>
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/contadores-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver contadores</span>
-                  </a>
-                </li>
-              </ul>
             </li>
             
-            <li class="site-menu-item has-sub active open">
-              <a href="javascript:void(0)" data-slug="layout">
-                <i class="site-menu-icon wb-calendar" aria-hidden="true"></i>
-                <span class="site-menu-title">Vencimientos</span>
-                <span class="site-menu-arrow"></span>
-              </a>
-              <ul class="site-menu-sub">
-                <li class="site-menu-item">
-                  <a class="animsition-link" href="../../html/jefe/vencimientos-crear.html" data-slug="layout-menu-collapsed">
-                    <i class="site-menu-icon " aria-hidden="true"></i>
-                    <span class="site-menu-title">Crear vencimiento</span>
-                  </a>
-                </li>
-                <li class="site-menu-item active">
-                  <a class="animsition-link" href="../../html/jefe/vencimientos-ver.html" data-slug="layout-menu-expended">
-                    <i class="site-menu-icon " aria-hidden="true"></i> 
-                    <span class="site-menu-title">Ver vencimientos</span>
-                  </a>
-                </li>
-              </ul>
-            </li>
+            
+            
           </ul>
 
 
@@ -321,29 +178,16 @@
 
 
 
-
   <!-- Page -->
   <div class="page animsition">
     <div class="page-header">
-      <h1 class="page-title">Ver detalles del vencimiento</h1>
+      <h1 class="page-title">Ver detalles de la tarea</h1>
       <ol class="breadcrumb">
         <li><a href="../index.html">Inicio</a></li>
-        <li>Vencimientos</li>
-        <li><a href="vencimientos-ver.html">Ver vencimientos</li></a>
-        <li class="active">Ver detalles del vencimiento</li>
+        <li>Tareas</li>
+        <li><a href="tareas-ver.html">Ver tareas</li></a>
+        <li class="active">Ver detalles de la tarea</li>
       </ol>
-
-
-      
-
-
-
-
-                
-
-
-
-
 
     </div>
     <div class="page-content">
@@ -356,29 +200,53 @@
             
             <tbody>
               <tr class="gradeA">
-                <td><b>Tarea</b></td>
-                <td>NombreTarea</td>                
+                <td><b>Fecha de inicio</b></td>
+                <td>2015-07-01</td>                
               </tr>
               <tr class="gradeA">
-                <td><b>Período fiscal</b></td>
-                <td>2013-2</td>                
+                <td><b>Fecha de finalización</b></td>
+                <td>2015-07-02</td>                
               </tr>
               <tr class="gradeA">
-                <td><b>Código verificador</b></td>
-                <td>v3r1fico</td>                
-              </tr>
-              <tr class="gradeA">
-                <td><b>Fecha de vencimiento</b></td>
+                <td><b>Vencimiento interno</b></td>
                 <td>2015-09-01</td>                
               </tr>
+              <tr class="gradeA">
+                <td><b>Nombre</b></td>
+                <td>Primer tarea</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Cliente</b></td>
+                <td>Pedro Suarez</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Contador</b></td>
+                <td>Leandro Wolf</td>                
+              </tr>
+              <tr class="gradeA">
+                <td><b>Observaciones</b></td>
+                <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sagittis est ac ante dignissim, at feugiat risus auctor. Donec maximus pulvinar urna. Duis fermentum sollicitudin varius. Vivamus lacus sem, egestas eget ullamcorper sed, blandit quis augue. </td>                
+              </tr>
+              
+
+              
             </tbody>
           </table>
 
           <div class="dt-panelfooter clearfix">
-          <button type="button" onclick="location.href='vencimientos-ver.html';" class="btn btn-outline btn-default margin-top-10">Volver al listado</button>
-          <a href="cursos-precargados.html" data-slug="dashboard">
+          <div class="row">       
+                  
+          <button type="button" onclick="location.href='dashboard.html';" class="btn btn-outline btn-default margin-top-10">Volver</button>
 
-          </a></div><a href="cursos-precargados.html" data-slug="dashboard">
+          <button type="button" class="btn btn-outline btn-warning ladda-button margin-top-10" data-style="slide-left" data-plugin="ladda">
+                      <span class="ladda-label"><i class="icon wb-download margin-right-10" aria-hidden="true"></i>Descargar archivo</span>
+                    <span class="ladda-spinner"></span></button>
+          
+          
+
+         
+        </div>
+      </div>
           <!-- -->        
 
       
