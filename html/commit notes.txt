@@ -1,0 +1,14 @@
+>dudas
+1 - en clientes-asignarPeriodica no estoy seguro si el fecha de baja está correcto.
+2 - en clientes-asignarPeriodica no está claro qué deben ser las últimas dos columnas.
+
+>terminados
+# menú (jefe)
+
+#clientes:
+
+>falta
+
+#tareas
+todo lo del email
+
